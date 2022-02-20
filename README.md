@@ -1,12 +1,12 @@
 # Latest Updates (02.19.2022)
 
 -   Completed bare-bones version
+-   Add a 3rd player
 
 ## Roadmap
 
 1. Make this look similar to [previous Connect4 exercise here](https://thetonyalvarez.github.io/sec-11-connect-four/)
 2. Add a `ComputerPlayer` that chooses a random piece
-3. Add a 3rd player
 
 ## Known Errors
 

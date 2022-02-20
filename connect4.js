@@ -1,6 +1,6 @@
 class Game {
-	constructor(p1, p2, width = 6, height = 7) {
-		this.players = [p1, p2];
+	constructor(p1, p2, p3, width = 6, height = 7) {
+		this.players = [p1, p2, p3];
 		this.width = width;
 		this.height = height;
 		this.board = board;
@@ -95,9 +95,16 @@ class Game {
 			return this.endGame("Tie!");
 		}
 
+		// this.currPlayer =
+		// 	this.currPlayer === this.players[0]
+		// 		? this.players[1]
+		// 		: this.players[0];
+
 		this.currPlayer =
 			this.currPlayer === this.players[0]
 				? this.players[1]
+				: this.currPlayer === this.players[1]
+				? this.players[2]
 				: this.players[0];
 	}
 
@@ -156,5 +163,6 @@ class Player {
 document.getElementById("start-game").addEventListener("click", () => {
 	let p1 = new Player(document.getElementById("p1_color").value);
 	let p2 = new Player(document.getElementById("p2_color").value);
-	new Game(p1, p2); // assuming constructor takes height, width
+	let p3 = new Player(document.getElementById("p3_color").value);
+	new Game(p1, p2, p3); // assuming constructor takes height, width
 });
