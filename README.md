@@ -1,5 +1,6 @@
 # Latest Updates (02.19.2022)
 
+-   Created branch to build a `ComputerPlayer`
 -   Completed bare-bones version
 
 ## Roadmap
